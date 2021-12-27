@@ -1,0 +1,72 @@
+.md {
+    height: 2rem;
+    width: 2rem;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 1rem;
+    left: 13.5rem;
+    z-index: 2;
+}
+
+.md:hover {
+    cursor: pointer;
+}
+#themecheckbox:checked ~ .themesOculto{
+    transition: all 0.5s;
+    visibility: visible;
+    position: relative;
+    top: 4.6rem;
+    display: flex;
+    z-index: 10;
+}
+#themecheckbox:checked ~ #themeopen {
+    visibility: hidden;
+}
+
+#themecheckbox:checked ~ .themeclose {
+    transition: all 500ms ease;
+    transform: translatey(-30%);
+    opacity:0.9;
+    height: 2rem;
+    width: 2rem;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 1rem;
+    left: 13.5rem;
+    z-index: 2;
+}
+
+.themesOculto{
+    transition: all 0.5s;
+    display:none;
+}
+#themecheckbox{
+    display: none;
+}
+
+.ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.lis{
+    background-color: black;
+    color:white;
+    width: 3.8rem;
+    height: 1.8rem;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.themeclose{
+    transition:2s;
+    height: 2rem;
+    width: 2rem;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0.8rem;
+    left: 0.5rem;
+    z-index: 2;
+    cursor: pointer;
+}
