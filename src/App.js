@@ -5,7 +5,7 @@ import Network from "./assets/Technology.webm";
 /*eslint-disable */
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 /*eslint-enable */
-import "./app.css";
+import "./App.css";
 import AboutMe from "./components/about/about";
 import Projects from "./components/projects/projects";
 import Contact from "./components/contact/contact";
