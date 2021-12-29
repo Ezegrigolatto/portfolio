@@ -3,6 +3,7 @@ import "./navBar.css";
 import Logo from "../../assets/logo.png";
 import { useSelector } from "react-redux";
 import Selector from "../themeSelector/themeSelector";
+import {RiMenuLine, RiCloseCircleLine} from "react-icons/ri";
 
 export default function NavBar() {
 
@@ -12,10 +13,23 @@ export default function NavBar() {
   return (
     <nav className="navbar" style={{color:color, backgroundColor:backgroundColor}}>
       <Link to="/">
-        <img src={Logo} alt="sin imagen"></img>
+        <img className="logo" src={Logo} alt="sin imagen"></img>
       </Link>
       <Selector />
+      <input type="checkbox" id="menucheckbox"/>
+      <label for="menucheckbox" className="menuOpen"> <RiMenuLine className="iconOpen"/> </label>
+      <label for="menucheckbox" className="menuClose"> <RiCloseCircleLine className="iconClose"/> </label>
       <ul className="links">
+      <li className="normal">
+          <NavLink
+            exact
+            to="/"
+            activeStyle={{ backgroundColor: 'blue' }}
+            className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+          >
+            Inicio
+          </NavLink>
+        </li>
         <li className="normal">
           <NavLink
             exact
@@ -45,6 +59,7 @@ export default function NavBar() {
           </NavLink>
         </li>
       </ul>
+
     </nav>
   );
 }

@@ -8,13 +8,35 @@
 .projects{
     color:white;
     display:flex;
-    flex-direction:column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-top:2.5rem;
     margin-bottom:2.5rem;
-    height:22rem;
+    height:auto;
     width: 80vw;
-    background-color: #333b50;
+    padding-bottom:2.5rem;
+    font-family: 'Josefin Sans';
+    flex-wrap: wrap
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem;
+}
+
+.project img{
+    height: 10rem;
+    width: 15rem;
+}
+
+.projectstitle{
+    color:white;
+    font-size: 3rem;
     font-family: 'Josefin Sans';
 }
+
+
+
+

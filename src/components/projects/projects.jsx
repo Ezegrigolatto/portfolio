@@ -1,5 +1,7 @@
 import { useSelector } from "react-redux";
 import "./projects.css";
+import Clima from "../../assets/weather.png";
+import Mail from "../../assets/mailsim.png";
 
 export default function Projects() {
   const color = useSelector((state) => state.color);
@@ -7,13 +9,32 @@ export default function Projects() {
 
   return (
     <div className="projectsContainer">
+      <h1 className="projectstitle">Proyectos</h1>
       <div
         className="projects"
         style={{ color: color, backgroundColor: backgroundColor }}
-      >
-        <h1>Sección en construcción...</h1>
-        <h3>Proximamente podrás ver mis proyectos en esta sección.</h3>
+        >
+        <div className="project">
+        <h2>Weather App</h2>
+        <img src={Clima} alt="weather" />
+        </div>
+        <div className="project">
+        <h2>Mail App</h2>
+        <img src={Mail} alt="mail" />
+        </div>
       </div>
+      <h1 className="projectstitle">Experiencias</h1>
+      <div
+        className="projects"
+        style={{ color: color, backgroundColor: backgroundColor }}
+        >
+        </div>
+        <h1 className="projectstitle">Herramientas y frameworks</h1>
+      <div
+        className="projects"
+        style={{ color: color, backgroundColor: backgroundColor }}
+        >
+        </div>
     </div>
   );
 }

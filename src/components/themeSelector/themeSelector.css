@@ -70,3 +70,20 @@
     z-index: 2;
     cursor: pointer;
 }
+
+@media screen and (max-width: 768px){
+    .md {
+        position:absolute;
+        top:1rem;
+        left:3.5rem
+    }    
+    .themeclose{
+        position:absolute;
+        top:0.85rem;
+        left:3.5rem;
+    }
+    .ul{
+        position:relative;
+        left:3.5rem;
+    }
+}
