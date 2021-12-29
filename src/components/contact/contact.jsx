@@ -33,8 +33,8 @@ export default function Contact() {
             className="input"
             type="text"
             name="nombre"
+            required
             placeholder="Nombre..."
-
           />
           <ValidationError 
           prefix="Nombre"
