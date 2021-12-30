@@ -260,4 +260,20 @@ text-align: justify;
         height: 30vh;
         margin:0
     }
+    #foto1.photo{
+        width:90vw;
+        height:50vw;
+    }
+    #foto2.photo{
+        width:90vw;
+        height:50vw;
+    }
+    #foto3.photo{
+        width:90vw;
+        height:50vw;
+    }
+    #foto4.photo{
+        width:90vw;
+        height:50vw;
+    }
 }
