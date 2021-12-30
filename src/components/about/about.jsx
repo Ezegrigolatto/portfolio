@@ -29,7 +29,7 @@ export default function AboutMe() {
             src="https://content.techgig.com/thumb/msid-74548080,width-860,resizemode-4/4-essential-skills-every-NET-developer-must-possess.jpg?67629"
             alt="About-me"
           />
-          <span className="description" style={{color:color, backgroundColor:backgroundColor}}>
+          <div className="description" style={{color:color, backgroundColor:backgroundColor}}>
             <p>
               Soy un desarrollador web Full-Stack con preferencia sobre el
               Front-End.
@@ -47,8 +47,8 @@ export default function AboutMe() {
               Me gusta estar al tanto de los avances tecnológicos y me fascina
               la astronomía.
             </p>
-            <a target="_blank" rel="noreferrer" href="https://mega.nz/file/wgZnQAQA#tcP2bKG6tctcm1jpIfEkrQyXIojBxu9V9kfao9oxJ7g"> <button className="btnabout">Descarga mi CV</button> </a>
-          </span>
+            <a className="cv" target="_blank" rel="noreferrer" href="https://mega.nz/file/wgZnQAQA#tcP2bKG6tctcm1jpIfEkrQyXIojBxu9V9kfao9oxJ7g"> <button className="btnabout">Descarga mi CV</button> </a>
+          </div>
         </div>
       </div>
       <div className="section"style={{color:color, backgroundColor:backgroundColor}}>
@@ -56,7 +56,7 @@ export default function AboutMe() {
         <div className="titleimage" style={{color:color, backgroundColor:backgroundColor}}>
           <img className="imageabout" src={SoftSkills} alt="Soft Skills" />
 
-          <span className="description" style={{color:color, backgroundColor:backgroundColor}}>
+          <div className="description" style={{color:color, backgroundColor:backgroundColor}}>
             <p>
               Durante 2 meses me desempeñé como Teach Assistant, donde fuí guia
               de un grupo de estudiantes; esta experiencia me permitió mejorar mis
@@ -83,7 +83,7 @@ export default function AboutMe() {
               <div className="foto"><img onClick={hacerModal} className="photo" id="foto4" src={SF4} alt="noImage"></img></div>
               </div>
             </div>
-          </span>
+          </div>
         </div>
       </div>
 
@@ -92,7 +92,7 @@ export default function AboutMe() {
         <div className="titleimage">
           <img className="imageabout" src={TechSkills} alt="Tech Skills" />
 
-          <span className="description" style={{color:color, backgroundColor:backgroundColor}}>
+          <div className="description" style={{color:color, backgroundColor:backgroundColor}}>
             <p>
               Dentro de mi stack de conocimientos puedo destacar los siguientes:
             </p>
@@ -114,7 +114,7 @@ export default function AboutMe() {
               <li> Postman </li>
             </ul>
             </div>
-          </span>
+          </div>
         </div>
       </div>
     </div>

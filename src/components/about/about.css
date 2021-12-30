@@ -3,22 +3,19 @@ body{
 }
 
 .titleimage{
-    position: relative;
     display:flex;
-    flex-direction:row;
-    color:white;
     justify-content: space-between;
     align-items: flex-start;
 }
 
 .section{
-    color:white;
     display:flex;
     flex-direction:column;
     margin-top:2.5rem;
     margin-bottom:2.5rem;
-    height:22rem;
+    height:100%;
     width: 80%;
+    padding-bottom: 2.5rem;
     background-color: #333b50;
     font-family: 'Josefin Sans';
 }
@@ -30,11 +27,18 @@ body{
 
 .lista{
     margin-left: -2.5rem;
+    height: 100%;
 }
 
 .description{
-color: white;
-width:30rem
+color: rgb(131, 79, 79);
+width:40rem;
+margin-left: 6rem;
+margin-right: 3rem;
+text-align: justify;
+}
+.cv{
+    width:auto;
 }
 
 .imageabout{
@@ -57,7 +61,6 @@ width:30rem
     padding: 0.5rem;
     height: 2rem;
     width: 8rem;
-    margin-left: 20rem;
     box-shadow: 0.01rem 0.01rem 0.1rem 0.1rem rgba(255, 255, 255, 0.5);
     cursor: pointer;
 }
@@ -154,7 +157,6 @@ width:30rem
     border: none;
     height: 2rem;
     width: 8rem;
-    margin-left: 20rem;
     box-shadow: 0.01rem 0.01rem 0.1rem 0.1rem rgba(255, 255, 255, 0.5);
 }
 
@@ -173,7 +175,7 @@ width:30rem
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 3.5rem;
+    height: 100%;
 }
 .photo{
     cursor: pointer;
@@ -204,4 +206,40 @@ width:30rem
 .foto.show::before{
     content:"Click en la imagen para volver atrás";
     color:white;
+}
+
+
+@media screen and (max-width: 1000px){
+    .description{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .imageabout{
+        display:none
+    }
+}
+
+@media screen and (max-width: 768px){
+    .imageabout{
+        display:none;
+    }
+    .description{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+    }
+    .section{
+        width: 90%;
+        height:auto;
+    }
+
+    .about{
+        height:100%;
+    }
+    
 }
