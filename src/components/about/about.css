@@ -134,8 +134,11 @@ text-align: justify;
         content:"Da click en una imagen para verla mas grande";
         position: absolute;
         top: 2rem;
-        left: 38%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         color:white;
+        width:100vw;
 }
 
 .testsContainer img {
@@ -247,6 +250,9 @@ text-align: justify;
         width: 40vw;
         height: 35vh;
     }
+    .cerrar{
+       margin-left:84vw
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -260,20 +266,19 @@ text-align: justify;
         height: 30vh;
         margin:0
     }
-    #foto1.photo{
-        width:90vw;
-        height:50vw;
+    .foto.show img{
+        width: 95vw;
+        height: 50vh;
+        cursor: pointer;
     }
-    #foto2.photo{
-        width:90vw;
-        height:50vw;
-    }
-    #foto3.photo{
-        width:90vw;
-        height:50vw;
-    }
-    #foto4.photo{
-        width:90vw;
-        height:50vw;
-    }
+    .testsContainer::before{
+        content:"Da click en una imagen para verla mas grande";
+        position: absolute;
+        top: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:white;
+        width:100vw;
+}
 }
