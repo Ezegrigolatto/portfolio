@@ -252,11 +252,12 @@ text-align: justify;
 @media screen and (max-width: 600px){
     .imgContainer{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
     }
     .testsContainer img {
-        width: 45vw;
-        height: 30vh; 
+        width: 48vw;
+        height: 30vh;
+        margin:0
     }
 }
