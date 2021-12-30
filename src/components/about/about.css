@@ -139,8 +139,8 @@ text-align: justify;
 }
 
 .testsContainer img {
-    width: 32rem;
-    height: 17rem;
+    width: 45vw;
+    height: 41vh;
     margin-left: 2rem;
     margin-right: 2rem;
     border: 2px solid #000000;
@@ -179,6 +179,7 @@ text-align: justify;
 }
 .photo{
     cursor: pointer;
+    width:10rem;
 }
 
 .foto.show {
@@ -198,8 +199,8 @@ text-align: justify;
 }
 
 .foto.show img{
-    width: 80%;
-    height: 80%;
+    width: 80vw;
+    height: 80vh;
     cursor: pointer;
 }
 
@@ -241,5 +242,21 @@ text-align: justify;
     .about{
         height:100%;
     }
-    
+
+    .testsContainer img {
+        width: 40vw;
+        height: 35vh;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .imgContainer{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .testsContainer img {
+        width: 40vw;
+        height: 30vh; 
+    }
 }
