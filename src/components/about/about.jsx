@@ -7,10 +7,27 @@ import SF3 from "../../assets/SF3.png";
 import SF4 from "../../assets/SF4.png";
 import { useSelector } from "react-redux";
 import {RiCloseCircleLine} from "react-icons/ri";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function AboutMe() {
   const color=useSelector(state=>state.color);
   const backgroundColor=useSelector(state=>state.backgroundColor);
+  const location = useLocation();
+  const {section} = location.state || {section: "about"};
+
+  useEffect(()=>{
+    if(section==="techs"){
+      document.getElementById("techs")?.scrollIntoView({behavior: "smooth"});
+    }
+    else if(section==="soft"){
+      document.getElementById("soft")?.scrollIntoView({behavior: "smooth"});
+    }else{
+      return
+    }
+
+  },[section])
+
 
   const hacerModal = (e) => {
     e.preventDefault();
@@ -18,6 +35,7 @@ export default function AboutMe() {
     e.target.parentNode.classList.toggle("show");
   };
 
+console.log(section)
 
   return (
     <div className="about"  >
@@ -51,7 +69,7 @@ export default function AboutMe() {
           </div>
         </div>
       </div>
-      <div className="section"style={{color:color, backgroundColor:backgroundColor}}>
+      <div id="soft" className="section"style={{color:color, backgroundColor:backgroundColor}}>
      <h1 >Soft Skills</h1>
         <div className="titleimage" style={{color:color, backgroundColor:backgroundColor}}>
           <img className="imageabout" src={SoftSkills} alt="Soft Skills" />
@@ -88,7 +106,7 @@ export default function AboutMe() {
       </div>
 
       <div className="section" style={{color:color, backgroundColor:backgroundColor}}>
-        <h1>Tech Skills</h1>
+        <h1 id="techs">Tech Skills</h1>
         <div className="titleimage">
           <img className="imageabout" src={TechSkills} alt="Tech Skills" />
 

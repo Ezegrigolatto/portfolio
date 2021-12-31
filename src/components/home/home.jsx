@@ -175,12 +175,12 @@ export default function Home() {
       </div>
 
       <div className="cajas">
-        <Link className="cajaUno" to="/sobre_mi">
+        <Link className="cajaUno" state={{section:"soft"}} to="/sobre_mi">
           <div>
             <h2 className="title">Soft Skills</h2>
           </div>
         </Link>
-        <Link to="/sobre_mi" className="cajaDos">
+        <Link to="/sobre_mi" state={{section:"techs"}} className="cajaDos">
           <div>
             <h2 className="title">Tech Skills</h2>
           </div>
@@ -191,7 +191,7 @@ export default function Home() {
           </div>
         </Link>
         <a className="cajaCuatro" target="_blank" rel="noreferrer" href="https://mega.nz/file/wgZnQAQA#tcP2bKG6tctcm1jpIfEkrQyXIojBxu9V9kfao9oxJ7g">
-          <div >
+          <div>
             <h2 className="title">Descarga mi CV</h2>
           </div>
         </a>
