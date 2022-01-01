@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import express from "../../assets/express.png";
 import sequelize from "../../assets/sequelize.png";
 import { Link } from "react-router-dom";
+import Chatbot from "../Chatbot/Chatbot";
 
 export default function Home() {
   const color = useSelector((state) => state.color);
@@ -206,6 +207,7 @@ export default function Home() {
           </div>
         </Link>
       </div>
+      <Chatbot/>
     </div>
   );
 }

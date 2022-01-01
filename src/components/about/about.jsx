@@ -9,6 +9,7 @@ import { useSelector } from "react-redux";
 import {RiCloseCircleLine} from "react-icons/ri";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import Chatbot from "../Chatbot/Chatbot"
 
 export default function AboutMe() {
   const color=useSelector(state=>state.color);
@@ -33,6 +34,14 @@ export default function AboutMe() {
     e.preventDefault();
     console.log(e.target.id)
     e.target.parentNode.classList.toggle("show");
+  };
+
+  const ocultarchat = () => {
+    document.getElementById("chatbot")?.classList.add("hide");
+  };
+
+  const mostrarchat = () => {
+    document.getElementById("chatbot")?.classList.remove("hide");
   };
 
 console.log(section)
@@ -91,9 +100,9 @@ console.log(section)
               conocimientos.
             </p>
             <input type="checkbox"  id="btnabout"></input>
-            <label for="btnabout" id="btnopen">Ver tests</label>
+            <label onClick={ocultarchat}for="btnabout" id="btnopen">Ver tests</label>
             <div className="testsContainer">
-              <label for="btnabout" className="cerrar"> <RiCloseCircleLine/> </label>
+              <label for="btnabout" className="cerrar"> <RiCloseCircleLine onClick={mostrarchat}/> </label>
               <div className="imgContainer">
               <div className="foto"><img onClick={hacerModal} className="photo" id="foto1" src={SF1} alt="noImage"></img></div>
               <div className="foto"><img onClick={hacerModal} className="photo" id="foto2" src={SF2} alt="noImage"></img></div>
@@ -134,6 +143,9 @@ console.log(section)
             </div>
           </div>
         </div>
+      </div>
+      <div id="chatbot">
+      <Chatbot />
       </div>
     </div>
   );

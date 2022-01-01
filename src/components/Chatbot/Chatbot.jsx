@@ -20,7 +20,7 @@ export default function Chatbot() {
   const theme = {
     background: "#ffffff",
     headerBgColor: backgroundColor,
-    headerzindex:"9999",
+    headerzindex:"2",
     headerFontColor: color,
     headerFontSize: "15px",
     botBubbleColor: backgroundColor,
@@ -97,9 +97,9 @@ export default function Chatbot() {
 
   const render = () => {
     return (
-      <div className="container">
+      <div className="containerchat">
       <div className={visibility? "visible" : "hidden"}>
-        <button className="cerrar" onClick={handleClick} ><RiCloseCircleLine/></button>
+        <button className="cerrarchat" onClick={handleClick} ><RiCloseCircleLine/></button>
         <ThemeProvider theme={theme}>
           <ChatBot
             botDelay={3000}

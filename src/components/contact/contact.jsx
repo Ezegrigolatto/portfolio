@@ -4,6 +4,7 @@ import { ImMobile2 } from "react-icons/im";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { useSelector } from "react-redux";
 import { useForm, ValidationError } from '@formspree/react';
+import Chatbot from "../Chatbot/Chatbot"
 
 
 export default function Contact() {
@@ -126,6 +127,7 @@ export default function Contact() {
         </div>
         <HandleForm/>
       </div>
+      <Chatbot/>
     </div>
   );
 }
