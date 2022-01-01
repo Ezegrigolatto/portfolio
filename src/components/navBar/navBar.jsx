@@ -10,6 +10,10 @@ export default function NavBar() {
   const color=useSelector(state=>state.color);
   const backgroundColor=useSelector(state=>state.backgroundColor);
 
+  const handlecheck = () => {
+    document.getElementById("menucheckbox").checked = false
+  }
+
   return (
     <nav className="navbar" style={{color:color, backgroundColor:backgroundColor}}>
       <Link to="/">
@@ -20,7 +24,7 @@ export default function NavBar() {
       <label for="menucheckbox" className="menuOpen"> <RiMenuLine className="iconOpen"/> </label>
       <label for="menucheckbox" className="menuClose"> <RiCloseCircleLine className="iconClose"/> </label>
       <ul className="links">
-      <li className="normal">
+      <li onClick={handlecheck} className="normal">
           <NavLink
             exact
             to="/"
@@ -30,7 +34,7 @@ export default function NavBar() {
             Inicio
           </NavLink>
         </li>
-        <li className="normal">
+        <li onClick={handlecheck} className="normal">
           <NavLink
             exact
             to="/sobre_mi"
@@ -40,7 +44,7 @@ export default function NavBar() {
             Sobre mi
           </NavLink>
         </li>
-        <li className="normal">
+        <li onClick={handlecheck} className="normal">
           <NavLink
             exact
             to="/proyectos"
@@ -49,7 +53,7 @@ export default function NavBar() {
             Proyectos
           </NavLink>
         </li>
-        <li className="normal">
+        <li onClick={handlecheck} className="normal">
           <NavLink
             exact
             to="/contacto"

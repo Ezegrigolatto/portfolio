@@ -9,6 +9,7 @@ import "./App.css";
 import AboutMe from "./components/about/about";
 import Projects from "./components/projects/projects";
 import Contact from "./components/contact/contact";
+import Chatbot from "./components/Chatbot/Chatbot";
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
           <Route exact path="/contacto" element={<Contact />} />
         </Routes>
 
-     
+     <Chatbot/>
       <Footer />
     </div>
   );
