@@ -195,7 +195,7 @@ export default function Home() {
             <h2 className="title">Descarga mi CV</h2>
           </div>
         </a>
-        <Link to="/proyectos" className="cajaCinco">
+        <Link to="/proyectos" state={{section:"experience"}} className="cajaCinco">
           <div >
             <h2 className="title">Experiencias</h2>
           </div>
