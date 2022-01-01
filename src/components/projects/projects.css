@@ -58,3 +58,9 @@
 }
 
 
+@media screen and (max-width: 768px){
+    .projects{
+        width: 95vw;
+    }    
+}
+
