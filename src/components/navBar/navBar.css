@@ -16,35 +16,42 @@
   height: 3rem;
 }
 
-.links {
-  display: flex;
-  align-items: center;
-  width: 100%;
+.listlinks{
+  display:flex;
+  flex-direction:row;
   height: 100%;
+  margin-right: 2rem;
 }
+
+ .links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
 
 li {
   font-family: "Josefin Sans";
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding: 0 6px
 }
-
 .active {
   background-color: #000000;
   height: 100%;
-  width: 5rem;
   color: white;
   display: flex;
   align-items: center;
   text-decoration: none;
   justify-content: center;
   transition: 0.5s;
+  padding: 0 10px;
 }
 
 .inactive {
   height: 100%;
-  width: 5rem;
   color: rgb(0, 0, 0);
   display: flex;
   align-items: center;
@@ -73,6 +80,7 @@ li {
     width: 10rem;
     height: 3rem;
   }
+
   .menuOpen {
     display: flex;
     position: absolute;
@@ -81,12 +89,13 @@ li {
   .listlinks{
     margin-top: 3rem;
     padding-left:0;
+    margin-right: 0;
     font-size:1.5rem;
     width:90%;
     display:flex;
     flex-direction:column;
     align-items:center;
-    justify-content:center;
+    justify-content:flex-start;
   }
 
   .iconOpen {
@@ -99,7 +108,7 @@ li {
     width: 1.5rem;
     position:fixed;
   }
-
+  
   .links {
     position:fixed;
     left: 0;
