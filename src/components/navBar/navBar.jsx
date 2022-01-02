@@ -23,7 +23,8 @@ export default function NavBar() {
       <input type="checkbox" id="menucheckbox"/>
       <label for="menucheckbox" className="menuOpen"> <RiMenuLine className="iconOpen"/> </label>
       <label for="menucheckbox" className="menuClose"> <RiCloseCircleLine className="iconClose"/> </label>
-      <ul className="links">
+      <div className="links">
+      <ul className="listlinks">
       <li onClick={handlecheck} className="normal">
           <NavLink
             exact
@@ -31,7 +32,7 @@ export default function NavBar() {
             activeStyle={{ backgroundColor: 'blue' }}
             className={({ isActive }) => (isActive ? 'active' : 'inactive')}
           >
-            Inicio
+            INICIO
           </NavLink>
         </li>
         <li onClick={handlecheck} className="normal">
@@ -41,7 +42,7 @@ export default function NavBar() {
             activeStyle={{ backgroundColor: 'blue' }}
             className={({ isActive }) => (isActive ? 'active' : 'inactive')}
           >
-            Sobre mi
+            SOBRE MI
           </NavLink>
         </li>
         <li onClick={handlecheck} className="normal">
@@ -50,7 +51,7 @@ export default function NavBar() {
             to="/proyectos"
             className={({ isActive }) => (isActive ? 'active' : 'inactive')}
           >
-            Proyectos
+            PROYECTOS
           </NavLink>
         </li>
         <li onClick={handlecheck} className="normal">
@@ -59,11 +60,11 @@ export default function NavBar() {
             to="/contacto"
             className={({ isActive }) => (isActive ? 'active' : 'inactive')}
           >
-            Contacto
+            CONTACTO
           </NavLink>
         </li>
       </ul>
-
+      </div>
     </nav>
   );
 }

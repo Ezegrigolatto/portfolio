@@ -26,13 +26,11 @@ export default function AboutMe() {
     }else{
       return
     }
-
   },[section])
 
 
   const hacerModal = (e) => {
     e.preventDefault();
-    console.log(e.target.id)
     e.target.parentNode.classList.toggle("show");
   };
 
@@ -100,7 +98,7 @@ console.log(section)
               conocimientos.
             </p>
             <input type="checkbox"  id="btnabout"></input>
-            <label onClick={ocultarchat}for="btnabout" id="btnopen">Ver tests</label>
+            <label onClick={ocultarchat} for="btnabout" id="btnopen">Ver tests</label>
             <div className="testsContainer">
               <label for="btnabout" className="cerrar"> <RiCloseCircleLine onClick={mostrarchat}/> </label>
               <div className="imgContainer">

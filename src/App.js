@@ -17,9 +17,7 @@ function App() {
       <video className="backgroundVideo" autoPlay muted loop>
         <source src={Network} type="video/webm" codecs="vp8,vorbis" />
       </video>
-      
       <NavBar />
-
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/sobre_mi" element={<AboutMe/>} />
