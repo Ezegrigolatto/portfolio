@@ -44,7 +44,9 @@ export default function Projects() {
           >
             <img src={Mail} alt="mail" />
           </a>
+
         </div>
+          <h3>Con el pasar de los días, iré llenando esta sección con mas proyectos de todo tipo.</h3>
       </div>
       <h1 className="projectstitle" id="experience">Experiencias</h1>
       <div
