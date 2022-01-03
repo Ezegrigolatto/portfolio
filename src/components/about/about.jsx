@@ -9,7 +9,6 @@ import { useSelector } from "react-redux";
 import {RiCloseCircleLine} from "react-icons/ri";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
-import Chatbot from "../Chatbot/Chatbot"
 
 export default function AboutMe() {
   const color=useSelector(state=>state.color);
@@ -141,9 +140,6 @@ console.log(section)
             </div>
           </div>
         </div>
-      </div>
-      <div id="chatbot">
-      <Chatbot />
       </div>
     </div>
   );

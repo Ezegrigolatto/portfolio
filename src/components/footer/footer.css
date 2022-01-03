@@ -1,8 +1,21 @@
 .footer{
     font-family: 'Josefin Sans';
     background-color: #333b50;
-    padding: 20px;
+    padding-top:20px;
+    padding-bottom:20px;
     text-align: center;
     font-size: 14px;
     color: #777;
+    position:relative;
+    bottom:0;
+    width:100%;
 }
+
+@media screen and (min-width: 1400px){
+    .footer{
+        position:fixed;
+    }    
+}
+
+
+

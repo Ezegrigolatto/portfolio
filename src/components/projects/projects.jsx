@@ -4,7 +4,6 @@ import { useLocation } from "react-router-dom";
 import "./projects.css";
 import Clima from "../../assets/weather.png";
 import Mail from "../../assets/mailsim.png";
-import Chatbot from "../Chatbot/Chatbot"
 
 export default function Projects() {
   const color = useSelector((state) => state.color);
@@ -95,7 +94,6 @@ export default function Projects() {
           </p>
         </span>
       </div>
-      <Chatbot />
     </div>
   );
 }

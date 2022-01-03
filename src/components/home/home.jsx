@@ -207,7 +207,9 @@ export default function Home() {
           </div>
         </Link>
       </div>
+    <div className="chatbott">
       <Chatbot/>
+    </div>
     </div>
   );
 }
