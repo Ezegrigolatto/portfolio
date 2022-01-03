@@ -25,6 +25,9 @@
     align-items: center;
     padding: 2.5rem;
 }
+.moreprojects{
+    text-align: center;
+}
 .frames{
     color:white;
     display:flex;

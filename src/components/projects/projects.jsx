@@ -46,7 +46,7 @@ export default function Projects() {
           </a>
 
         </div>
-          <h3>Con el pasar de los días, iré llenando esta sección con mas proyectos de todo tipo.</h3>
+          <h3 className="moreprojects">Con el pasar de los días, iré llenando esta sección con mas proyectos de todo tipo.</h3>
       </div>
       <h1 className="projectstitle" id="experience">Experiencias</h1>
       <div
