@@ -6,6 +6,7 @@ import Clima from "../../assets/weather.png";
 import Mail from "../../assets/mailsim.png";
 import Remolo from "../../assets/remolo.png";
 import Challenge from "../../assets/challenge.png";
+import devsky from "../../assets/devsky.png";
 
 export default function Projects() {
   const color = useSelector((state) => state.color);
@@ -54,9 +55,15 @@ export default function Projects() {
             <img src={Remolo} alt="pizzeria Don Remolo" />
         </div>
         <div className="project">
-          <h2>The Weather Challenge</h2>
+          <h2>The Weather Challenge *</h2>
             <img src={Challenge} alt="the weather challenge" />
         </div>
+        <div className="project">
+        <h2>DEV-SKY</h2>
+          <a target="_blank" href="https://www.youtube.com/watch?v=tpjZ5AQ6iqs" rel="noreferrer"><img src={devsky} alt="devSky"></img></a>
+
+        </div>
+
 <h3 className="nota">NOTA: El proyecto The weather Challenge ha sido desarrollado como parte de un challenge de una empresa,
    motivo por el cual no se encuentra público, sin embargo puedo contarte que se trata de una aplicación
    del clima mas completa, con posibilidad de buscar el clima para hasta 5 ciudades a la vez, clima por hora,
