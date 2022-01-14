@@ -25,9 +25,16 @@
     align-items: center;
     padding: 2.5rem;
 }
+
 .moreprojects{
     text-align: center;
+    color: white;
 }
+.nota {
+    max-width: 60vw;
+    text-align: center;
+}
+
 .frames{
     color:white;
     display:flex;

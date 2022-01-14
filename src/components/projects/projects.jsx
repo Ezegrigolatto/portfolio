@@ -4,13 +4,15 @@ import { useLocation } from "react-router-dom";
 import "./projects.css";
 import Clima from "../../assets/weather.png";
 import Mail from "../../assets/mailsim.png";
+import Remolo from "../../assets/remolo.png";
+import Challenge from "../../assets/challenge.png";
 
 export default function Projects() {
   const color = useSelector((state) => state.color);
   const backgroundColor = useSelector((state) => state.backgroundColor);
   const location = useLocation();
   const {section} = location.state || {section: "projects"};
-
+  
   useEffect(() => {
     if (section === "experience") {
       document.getElementById("experience")?.scrollIntoView({ behavior: "smooth" });
@@ -21,12 +23,13 @@ export default function Projects() {
   return (
     <div className="projectsContainer">
       <h1 className="projectstitle">Proyectos</h1>
+      <h3 className="moreprojects">Con el pasar de los días, iré llenando esta sección con mas proyectos de todo tipo.</h3>
       <div
         className="projects"
         style={{ color: color, backgroundColor: backgroundColor }}
       >
         <div className="project">
-          <h2>Weather App</h2>
+          <h2> Simple Weather App</h2>
           <a
             target="_blank"
             rel="noreferrer"
@@ -46,7 +49,20 @@ export default function Projects() {
           </a>
 
         </div>
-          <h3 className="moreprojects">Con el pasar de los días, iré llenando esta sección con mas proyectos de todo tipo.</h3>
+        <div className="project">
+          <h2>Pizzeria Don Rémolo (En desarrollo...)</h2>
+            <img src={Remolo} alt="pizzeria Don Remolo" />
+        </div>
+        <div className="project">
+          <h2>The Weather Challenge</h2>
+            <img src={Challenge} alt="the weather challenge" />
+        </div>
+<h3 className="nota">NOTA: El proyecto The weather Challenge ha sido desarrollado como parte de un challenge de una empresa,
+   motivo por el cual no se encuentra público, sin embargo puedo contarte que se trata de una aplicación
+   del clima mas completa, con posibilidad de buscar el clima para hasta 5 ciudades a la vez, clima por hora,
+   clima por los 5 siguientes dias, hora local para cada ciudad buscada y aplicación de testing unitario, 
+   entre otras características.
+</h3>
       </div>
       <h1 className="projectstitle" id="experience">Experiencias</h1>
       <div
