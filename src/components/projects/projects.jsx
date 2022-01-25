@@ -51,8 +51,8 @@ export default function Projects() {
 
         </div>
         <div className="project">
-          <h2>Pizzeria Don Rémolo (En desarrollo...)</h2>
-            <img src={Remolo} alt="pizzeria Don Remolo" />
+          <h2>Pizzeria Don Rémolo</h2>
+           <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=uXeHxYREmsM"><img src={Remolo} alt="pizzeria Don Remolo"/></a>
         </div>
         <div className="project">
           <h2>The Weather Challenge *</h2>
